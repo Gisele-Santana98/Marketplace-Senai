@@ -1,0 +1,94 @@
+/* styles.css */
+
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #d1e4ce; /* Fundo claro */
+}
+
+header {
+    background: #72d476; /* Cor de fundo do cabeçalho */
+    color: rgb(10, 10, 10);
+    padding: 10px 20px; /* Espaçamento interno */
+    text-align: center;
+}
+
+nav a {
+    color: rgb(7, 7, 7);
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline; /* Efeito ao passar o mouse */
+}
+
+main {
+    padding: 20px;
+}
+
+/* Estilos para as seções */
+section {
+    background: white; /* Fundo branco para as seções */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    margin-bottom: 20px; /* Espaço entre seções */
+    padding: 20px; /* Espaçamento interno */
+}
+
+h2, h3 {
+    color: #030303; /* Cor dos títulos */
+}
+
+h3 {
+    border-bottom: 2px solid #72d476; /* Linha abaixo do título */
+    padding-bottom: 10px; /* Espaço abaixo do título */
+}
+
+/* Estilo para lista de produtos */
+ul.servicos {
+    display: flex; /* Flexbox para layout em linha */
+    flex-wrap: wrap; /* Permite quebra de linha */
+    padding: 0;
+    list-style: none; /* Remove marcadores */
+}
+
+/* Estilo para cada produto */
+.produto {
+    flex: 1 1 30%; /* Flexível, com base em 30% da largura */
+    margin: 10px; /* Espaço entre produtos */
+    padding: 10px; /* Espaço interno */
+    text-align: center; /* Centraliza conteúdo */
+    border: 1px solid #ddd; /* Borda ao redor do produto */
+    border-radius: 8px; /* Bordas arredondadas */
+    background: #fff; /* Fundo branco */
+    transition: transform 0.2s; /* Animação suave ao passar o mouse */
+}
+
+.produto:hover {
+    transform: scale(1.05); /* Aumenta um pouco o produto ao passar o mouse */
+}
+
+.produto img {
+    width: 200px; /* Largura fixa */
+    height: 200px; /* Altura fixa */
+    object-fit: cover; /* Ajusta a imagem para cobrir a área definida */
+    border-radius: 8px; /* Bordas arredondadas */
+}
+
+.preco {
+    font-weight: bold; /* Preço em negrito */
+    color: #E91E63; /* Cor do preço */
+    margin-top: 5px; /* Espaço acima do preço */
+}
+
+.footer-content {
+    background-color:#72d476; /* Cor de fundo do rodapé */
+    color: rgb(7, 7, 7); /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 10px; /* Espaçamento interno */
+    position: relative; /* Para que o rodapé fique no final da página */
+    bottom: 0; /* Para posicionar no fundo se necessário */
+}

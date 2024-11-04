@@ -1,0 +1,134 @@
+body {
+    font-family: 'Arial', sans-serif; /* Fonte padrão */
+    background-color: #d1e4ce; /* Fundo claro */
+    margin: 0;
+    padding: 20px; /* Espaçamento interno */
+}
+
+header {
+    background-color: #72d476; /* Cor de fundo do cabeçalho */
+    color: rgb(32, 32, 32); /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno */
+    text-align: center; /* Centraliza o texto */
+}
+
+nav a {
+    color: rgb(8, 8, 8);
+    margin: 0 15px;
+    text-decoration: none;
+}
+nav a:hover {
+    text-decoration: underline; /* Efeito ao passar o mouse */
+}
+
+h2, h3 {
+    color: #0a0a0a; /* Cor dos cabeçalhos */
+}
+
+h3 {
+    border-bottom: 2px solid #72d476; /* Linha abaixo do título */
+    padding-bottom: 10px; /* Espaço abaixo do título */
+}
+
+/* Estilo para lista de produtos */
+ul.servicos {
+    display: flex; /* Flexbox para layout em linha */
+    flex-wrap: wrap; /* Permite quebra de linha */
+    padding: 0;
+    list-style: none; /* Remove marcadores */
+}
+.produto {
+    flex: 1 1 30%; /* Flexível, com base em 30% da largura */
+    margin: 10px; /* Espaço entre produtos */
+    padding: 10px; /* Espaço interno */
+    text-align: center; /* Centraliza conteúdo */
+    border: 1px solid #ddd; /* Borda ao redor do produto */
+    border-radius: 8px; /* Bordas arredondadas */
+    background: #fff; /* Fundo branco */
+    transition: transform 0.2s; /* Animação suave ao passar o mouse */
+}
+.produto:hover {
+    transform: scale(1.05); /* Aumenta um pouco o produto ao passar o mouse */
+}
+
+.produto img {
+    width: 100%; /* Imagem ocupa 100% do container */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Arredonda os cantos da imagem */
+}
+
+.preco {
+    font-size: 20px; /* Tamanho do preço */
+    font-weight: bold; /* Destaca o preço */
+    color: #e67e22; /* Cor do preço */
+    margin-top: 5px; /* Espaço acima do preço */
+    margin-bottom: 10px; /* Espaço entre o preço e o nome do produto */
+    margin-left: auto; /* Centraliza o texto ao lado do preço */
+    margin-right: auto; /* Centraliza o texto ao lado do preço */
+}
+html {
+    scroll-behavior: smooth; /* Ativa a rolagem suave */
+}
+.container-quem-somos {
+    display: flex; /* Usa flexbox para centralizar */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    text-align: center; /* Centraliza o texto dentro do container */
+    margin: 20px auto; /* Espaçamento vertical acima e abaixo */
+    padding: 20px; /* Espaçamento interno */
+    background-color: #d8d0d0; /* Fundo branco */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+.container-servicos{
+    background-color: #d8d0d0; /* Cor de fundo do container */
+    border: 1px solid #ddd; /* Borda do container */
+    border-radius: 8px; /* Cantos arredondados */
+    padding: 20px; /* Espaçamento interno */
+    margin-top: 40px; /* Espaço acima do container */
+}
+.servicos {
+    display: flex; /* Usar Flexbox */
+    flex-wrap: wrap; /* Permite que as imagens se movam para a linha seguinte se não houver espaço */
+    justify-content: space-around; /* Espaçamento entre as imagens */
+}
+.joias {
+    margin: 10px; /* Espaçamento entre os itens */
+    text-align: center; /* Centraliza o texto abaixo das imagens */
+}
+
+.joias img {
+    width: 100%; /* Imagens ocupam 100% do seu contêiner */
+    object-fit: cover; /* Opcional: mantém a proporção da imagem */
+    max-height: 200px; /* Defina um limite máximo para a altura */
+    height: auto; /* Mantém a proporção */
+    border-radius: 8px; /* Opcional: arredonda os cantos das imagens */
+}
+main {
+    padding: 30px;
+}
+
+section {
+    margin-bottom: 40px; /* Espaço entre seções */
+}
+.footer-content {
+    background-color:#72d476; /* Cor de fundo do rodapé */
+    color: rgb(15, 15, 15); /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 10px; /* Espaçamento interno */
+    position: relative; /* Para que o rodapé fique no final da página */
+    bottom: 0; /* Para posicionar no fundo se necessário */
+}
+
+.formas-pagamento img {
+    width: 50px; /* Largura das imagens de pagamento */
+    margin: 0 5px; /* Espaçamento lateral entre as imagens */
+}
+
+.icone-pagamento {
+    width: 40px; /* Largura padrão dos ícones */
+    height: auto; /* Mantém a proporção */
+    margin: 0 5px; /* Espaçamento lateral entre os ícones */
+    vertical-align: middle; /* Alinha os ícones verticalmente */
+}
+
